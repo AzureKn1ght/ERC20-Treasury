@@ -39,7 +39,7 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   max-height: 550px;
-  min-height: 360px;
+  min-height: 100px;
   -webkit-overflow-scrolling: touch;
   border: 1px solid rgb(245, 245, 245);
 }
