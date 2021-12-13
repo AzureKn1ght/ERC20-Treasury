@@ -14,7 +14,7 @@ function init() {
   //Get user name and id
   accountHash = sessionStorage.getItem("accountId") || "accountid";
   titleName.innerHTML = `${tokAddress}`;
-  titleName.href = `https://ropsten.etherscan.io/token/${tokAddress}`;
+  titleName.href = `https://ropsten.etherscan.io/address/${tokAddress}`;
 
   //Get total supply from token contract
   getTotalSupply();
