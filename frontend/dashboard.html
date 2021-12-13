@@ -1,92 +1,73 @@
 <!-- REFERENCE COPY  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Philson Token - Dashboard</title>
-  </head>
-  <body>
-    <div class="logo">
-      <img
-        src="./images/wbtc.png"
-        style="width: 10em"
-        class="img-fluid"
-        alt="Bitcoin"
-      />
-    </div>
 
-    <div class="container" id="details">
-      <div>
-        <p>
-          <a id="titleName" target="_blank" href="#"></a>
-        </p>
-        <h4>Total Supply</h4>
-        <h1 id="balance">₿ 000000</h1>
-        <br />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Philson Token - Dashboard</title>
+</head>
 
-      <div id="newsContainer">
-        <form id="form">
-          <button id="b1" class="btn btn-info">Mint New Coins</button>
-        </form>
-      </div>
-    </div>
+<body>
+  <div class="logo">
+    <img src="./images/wbtc.png" style="width: 10em" class="img-fluid" alt="Philson Token" />
+  </div>
 
+  <div class="container" id="details">
     <div>
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <u
-            ><a class="nav-link active" aria-current="page" href="#"
-              >Dashboard</a
-            ></u
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tokens.html">Wallet</a>
-        </li>
-        <li class="nav-item" onclick="logout()">
-          <a class="nav-link disabled" href="#" tabindex="-1"> Logout</a>
-        </li>
-      </ul>
+      <p>
+        <a id="titleName" target="_blank" href="#"></a>
+      </p>
+      <h4>Total Supply</h4>
+      <h1 id="balance">₿ 000000</h1>
+      <br />
     </div>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
-    <script src="js/metamask.js"></script>
-    <script src="js/abi.js"></script>
-    <script src="js/tokenABI.js"></script>
-    <script src="js/dashboard.js"></script>
-    <!-- Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div id="newsContainer">
+      <form id="form">
+        <button id="b1" class="btn btn-info">Mint New Coins</button>
+      </form>
+    </div>
+  </div>
+
+  <div>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <u><a class="nav-link active" aria-current="page" href="#">Dashboard</a></u>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tokens.html">Wallet</a>
+      </li>
+      <li class="nav-item" onclick="logout()">
+        <a class="nav-link disabled" href="#" tabindex="-1"> Logout</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+  <script src="js/metamask.js"></script>
+  <script src="js/abi.js"></script>
+  <script src="js/tokenABI.js"></script>
+  <script src="js/dashboard.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

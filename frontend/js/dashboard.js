@@ -47,5 +47,5 @@ function logout() {
 init();
 b1.addEventListener("click", function (e) {
   e.preventDefault();
-  location.href = "addgoal.html";
+  location.href = "mint.html";
 });
