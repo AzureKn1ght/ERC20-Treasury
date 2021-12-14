@@ -16,6 +16,6 @@ A _live website_ example has been deployed to the following address:
 
 [https://azurekn1ght.github.io/ERC20-Treasury/](https://azurekn1ght.github.io/ERC20-Treasury/)
 
-ERC-20 token address \[Ethereum Testnet (Ropsten)\]:
+ERC-20 token address on the Ethereum Testnet (Ropsten):
 
 [0xF5C318b1806f892bFFF1B8A82BA0368dF6CDCB5D](https://ropsten.etherscan.io/address/0xF5C318b1806f892bFFF1B8A82BA0368dF6CDCB5D)
