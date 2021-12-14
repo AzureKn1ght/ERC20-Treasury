@@ -19,7 +19,7 @@ const getTotalSupply = async () => {
     const res = await fetch(url);
     const data = await res.json();
     console.log(data.result);
-    totalSuppy = parseInt(data.result) * Math.pow(10, -18);
+    totalSuppy = parseInt(data.result * Math.pow(10, -18));
     console.log(totalSuppy);
     titleName.innerHTML = `Total Supply: ${totalSuppy}`;
   } catch (err) {
