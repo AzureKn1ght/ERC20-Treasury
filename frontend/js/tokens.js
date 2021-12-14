@@ -25,6 +25,7 @@ function getTokenBal(id, tokContract, elm, dec) {
       .getBalance(id)
       .then((result) => {
         let bal = Number.parseFloat(web3.utils.fromWei(result)).toFixed(dec);
+        if (bal === 0) bal = zeroPad(bal, 6);
         console.log(bal);
         elm.innerText = `${bal}`;
       })
@@ -37,6 +38,7 @@ function getTokenBal(id, tokContract, elm, dec) {
       .call()
       .then((result) => {
         let bal = Number.parseFloat(web3.utils.fromWei(result)).toFixed(dec);
+        bal = zeroPad(bal, 6);
         console.log(bal);
         elm.innerText = `${bal}`;
       })
@@ -46,7 +48,7 @@ function getTokenBal(id, tokContract, elm, dec) {
   }
 }
 
-//PLEASE KEEP THE LOGOUT FUNCTION THANKS
+const zeroPad = (num, places) => String(num).padStart(places, "0");
 function logout() {
   //Logout and redirect to login page
   sessionStorage.clear();
